@@ -78,8 +78,8 @@ function setup() {
         let [x, y, z, type] = atomsConfig[i]
         atoms.push(new Atom(x, y, z, type))
     }
-    scaleRatio = windowHeight / 10
-}
+    scaleRatio = min(windowWidth, windowHeight) / 12
+ }
 
 function getAtomColor(index)
 {
